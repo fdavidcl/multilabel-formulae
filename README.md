@@ -1,6 +1,14 @@
 # Common multilabel formulae
 ### ...under a common notation
 
+Multilabel Classification is a branch of Data Mining in which many different
+metrics and equations are defined. Each author uses different notation and
+basic definitions, thus difficulting the coherence of future papers where
+some of these formulas are used. This is a document where the multilabel
+scenario is presented with simple basic definitions, and a list of commonly
+used formulas are rigurously adapted to this notation, in an attempt to
+introduce them in a clear way.
+
 [Source
 code](https://github.com/fdavidcl/multilabel-formulae/blob/master/formulae.md)
 

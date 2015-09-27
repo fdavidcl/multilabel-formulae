@@ -17,8 +17,8 @@ instances and labels. Be clear and explain any additional names and variables.
 
 ## Copying
 
-This document and its source code are under a [MIT License](https://github.com/fdavidcl/multilabel-formulae/blob/master/LICENSE),
+The document and its source code are under a [MIT License](https://github.com/fdavidcl/multilabel-formulae/blob/master/LICENSE),
 which means copying, modification and distribution are completely allowed without
 necessary attribution. You don't need to copy the LICENSE notice if you include
 the equations into your own work, but you do need to include it if you redistribute
-the whole document.
+this whole document.

@@ -1,2 +1,7 @@
-# multilabel-equations
-A list of the most common multilabel-related measures, under a common notation
+# Common multilabel formulae
+### ...under a common notation
+
+[Source 
+code](https://github.com/fdavidcl/multilabel-formulae/blob/master/formulae.md)
+
+[Document](https://github.com/fdavidcl/multilabel-formulae/blob/master/formulae.pdf)

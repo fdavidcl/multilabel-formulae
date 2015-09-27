@@ -12,6 +12,8 @@ introduce them in a clear way.
 [Source
 code](https://github.com/fdavidcl/multilabel-formulae/blob/master/formulae.md)
 
+[LaTeX version](https://github.com/fdavidcl/multilabel-formulae/blob/master/formulae.tex)
+
 [Document](https://github.com/fdavidcl/multilabel-formulae/blob/master/formulae.pdf)
 
 ## Compilation

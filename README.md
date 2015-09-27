@@ -1,6 +1,10 @@
 # Common multilabel formulae
 ### ...under a common notation
 
+[![PDF Document](https://img.shields.io/badge/document-PDF-blue.svg)](https://github.com/fdavidcl/multilabel-formulae/blob/master/formulae.pdf)
+[![Source code](https://img.shields.io/badge/source-Markdown-green.svg)](https://github.com/fdavidcl/multilabel-formulae/blob/master/formulae.md)
+[![LaTeX version](https://img.shields.io/badge/source-LaTeX-lightgray.svg)](https://github.com/fdavidcl/multilabel-formulae/blob/master/formulae.tex)
+
 Multilabel Classification is a branch of Data Mining in which many different
 metrics and equations are defined. Each author uses different notation and
 basic definitions, thus difficulting the coherence of future papers where
@@ -8,13 +12,6 @@ some of these formulas are used. This is a document where the multilabel
 scenario is presented with simple basic definitions, and a list of commonly
 used formulas are rigurously adapted to this notation, in an attempt to
 introduce them in a clear way.
-
-[Source
-code](https://github.com/fdavidcl/multilabel-formulae/blob/master/formulae.md)
-
-[LaTeX version](https://github.com/fdavidcl/multilabel-formulae/blob/master/formulae.tex)
-
-[Document](https://github.com/fdavidcl/multilabel-formulae/blob/master/formulae.pdf)
 
 ## Compilation
 

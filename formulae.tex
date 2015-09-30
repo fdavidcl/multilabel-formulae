@@ -93,7 +93,7 @@ Some basic data directly extracted from the definitions are:
 \item
   Number of input attributes, \(f\)
 \item
-  Number of labels, \(\abs D\)
+  Number of labels, \(\abs L\)
 \item
   Number of instances, \(\abs D\)
 \item
@@ -101,9 +101,9 @@ Some basic data directly extracted from the definitions are:
 \end{itemize}
 
 Many of the measures specific to multilabel classification are related
-to the labels. For instance, we can find out the mean number of labels
-in a labelset (\emph{Card}, \ref{eq:Card}) and its proportion as to the
-total number of labels (\emph{Dens}, \ref{eq:Dens}):
+to the labels themselves. For instance, we can find out the mean number
+of labels in a labelset (\emph{Card}, \ref{eq:Card}) and its proportion
+as to the total number of labels (\emph{Dens}, \ref{eq:Dens}):
 
 \begin{equation} \func{Card}(D) = \frac 1 {\abs D} \sum_{(X,Y)\in D} \abs Y \label{eq:Card}\end{equation}
 

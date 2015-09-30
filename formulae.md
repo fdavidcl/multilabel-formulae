@@ -30,20 +30,21 @@ $Y \in\mathcal{P}(L)$.
 
 # Basic measures
 
-Some basic data directly extracted from the definitions are:
+In the following we will assume $D$ is a fixed set. Otherwise, many of the
+measures would be dependent on D. Some basic data directly extracted from the definitions are:
 
 * Number of input attributes, $f$
-* Number of labels, $\abs D$
+* Number of labels, $\abs L$
 * Number of instances, $\abs D$
 * Number of distinct labelsets, $\abs{\{Y:(X, Y)\in D\}}$
 
 Many of the measures specific to multilabel classification are related to the
-labels. For instance, we can find out the mean number of labels in a labelset
+labels themselves. For instance, we can find out the mean number of labels in a labelset
 (*Card*, @eq:Card) and its proportion as to the total number of labels (*Dens*,
 @eq:Dens):
 
-$$ \func{Card}(D) = \frac 1 {\abs D} \sum_{(X,Y)\in D} \abs Y $$ {#eq:Card}
+$$ \func{Card} = \frac 1 {\abs D} \sum_{(X,Y)\in D} \abs Y $$ {#eq:Card}
 
-$$ \func{Dens}(D) = \frac 1 {\abs D \abs L} \sum_{(X,Y)\in D} \abs Y $$ {#eq:Dens}
+$$ \func{Dens} = \frac 1 {\abs D \abs L} \sum_{(X,Y)\in D} \abs Y $$ {#eq:Dens}
 
 # Imbalance and concurrence

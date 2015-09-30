@@ -15,7 +15,9 @@ introduce them in a clear way.
 
 ## Compilation
 
-Use [pandoc](https://github.com/jgm/pandoc) and Make to compile the Markdown file into a document.
+Use [pandoc](https://github.com/jgm/pandoc) and Make to compile the Markdown file into a document. Required filters:
+
+* [`pandoc-eqnos`](https://github.com/tomduck/pandoc-eqnos)
 
 ## Contributing
 

@@ -48,6 +48,7 @@
 \title{Common multilabel formulae\\\vspace{0.5em}{\large \ldots{}under a common notation}}
 \author{David Charte}
 \date{}
+\newcommand{\func}[1]{\operatorname{\mathit{#1}}} \newcommand{\const}[1]{\mathit{#1}} \newcommand{\abs}[1]{\left\lvert{#1}\right\rvert}
 
 \begin{document}
 \maketitle
@@ -70,8 +71,8 @@ with elements of their cartesian product,
 \(A_1\times A_2\times\dots\times A_f\).
 
 Let \(L\) be a finite set. This will be the set of all possible labels.
-Each instance of a dataset will then have a subset of \emph{active
-labels}, \(Y \subset L\).
+Each instance of a dataset will then have a subset of active labels or
+\emph{labelset}, \(Y \subset L\).
 
 Let \(D\) be a finite subset of
 \(A_1\times A_2\times\dots\times A_f\times\mathcal{P}(L)\), where
@@ -84,6 +85,29 @@ each of its elements an \emph{instance}: \((X, Y)\in D\) where
 instances are identical.
 
 \section{Basic measures}\label{basic-measures}
+
+Some basic data directly extracted from the definitions are:
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Number of input attributes, \(f\)
+\item
+  Number of labels, \(\abs D\)
+\item
+  Number of instances, \(\abs D\)
+\item
+  Number of distinct labelsets, \(\abs{\{Y:(X, Y)\in D\}}\)
+\end{itemize}
+
+Many of the measures specific to multilabel classification are related
+to the labels. For instance, we can find out the mean number of labels
+in a labelset (\emph{Card}, \ref{eq:Card}) and its proportion as to the
+total number of labels (\emph{Dens}, \ref{eq:Dens}):
+
+\begin{equation} \func{Card}(D) = \frac 1 {\abs D} \sum_{(X,Y)\in D} \abs Y \label{eq:Card}\end{equation}
+
+\begin{equation} \func{Dens}(D) = \frac 1 {\abs D \abs L} \sum_{(X,Y)\in D} \abs Y \label{eq:Dens}\end{equation}
 
 \section{Imbalance and concurrence}\label{imbalance-and-concurrence}
 

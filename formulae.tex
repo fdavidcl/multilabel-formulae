@@ -15,6 +15,7 @@
   \fi
   \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
   \newcommand{\euro}{€}
+    \setmainfont{PT Serif}
 \fi
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -72,21 +73,24 @@ with elements of their cartesian product,
 
 Let \(L\) be a finite set. This will be the set of all possible labels.
 Each instance of a dataset will then have a subset of active labels or
-\emph{labelset}, \(Y \subset L\).
+\emph{labelset}, \(y \subset L\).
 
 Let \(D\) be a finite subset of
 \(A_1\times A_2\times\dots\times A_f\times\mathcal{P}(L)\), where
 \(\mathcal{P}(L)\) is the powerset of \(L\), that is, the set of all
 possible combinations of labels. We will call \(D\) a \emph{dataset} and
-each of its elements an \emph{instance}: \((X, Y)\in D\) where
-\(X\in A_1\times A_2\times\dots\times A_f\) and \(Y \in\mathcal{P}(L)\).
+each of its elements an \emph{instance}: \((x, y)\in D\) where
+\(x=(x_1,x_2,\dots x_f)\in A_1\times A_2\times\dots\times A_f\) and
+\(y=\{l_1,\dots l_k\} \in\mathcal{P}(L)\).
 
 \textbf{Note}: Since \(D\) is a set, we will be assuming no two
 instances are identical.
 
 \section{Basic measures}\label{basic-measures}
 
-Some basic data directly extracted from the definitions are:
+In the following we will assume \(D\) is a fixed set. Otherwise, many of
+the measures would be dependent on D. Some basic data directly extracted
+from the definitions are:
 
 \begin{itemize}
 \itemsep1pt\parskip0pt\parsep0pt
@@ -105,9 +109,9 @@ to the labels themselves. For instance, we can find out the mean number
 of labels in a labelset (\emph{Card}, \ref{eq:Card}) and its proportion
 as to the total number of labels (\emph{Dens}, \ref{eq:Dens}):
 
-\begin{equation} \func{Card}(D) = \frac 1 {\abs D} \sum_{(X,Y)\in D} \abs Y \label{eq:Card}\end{equation}
+\begin{equation} \func{Card} = \frac 1 {\abs D} \sum_{(x,y)\in D} \abs y \label{eq:Card}\end{equation}
 
-\begin{equation} \func{Dens}(D) = \frac 1 {\abs D \abs L} \sum_{(X,Y)\in D} \abs Y \label{eq:Dens}\end{equation}
+\begin{equation} \func{Dens} = \frac 1 {\abs D \abs L} \sum_{(x,y)\in D} \abs y \label{eq:Dens}\end{equation}
 
 \section{Imbalance and concurrence}\label{imbalance-and-concurrence}
 
